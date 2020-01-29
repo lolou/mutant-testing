@@ -64,13 +64,18 @@
                     <dependency>
                         <groupId>org.pitest</groupId>
                         <artifactId>pitest-junit5-plugin</artifactId>
-                        <version>0.10</version>
+                        <version>0.11</version>
                     </dependency>
                 </dependencies>
                 <configuration>
                     <mutators>ALL</mutators>
                     <withHistory>true</withHistory>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>eu.stamp-project</groupId>
+                <artifactId>pitmp-maven-plugin</artifactId>
+                <version>1.3.7</version>
             </plugin>
         </plugins>
     </build>
